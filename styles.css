@@ -1,0 +1,567 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body */
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+/* Logo & Branding */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.brand-text {
+    text-transform: uppercase;
+}
+
+.auto-care {
+    font-size: 18px;
+    font-weight: bold;
+    color: #d90429;
+}
+
+.pros {
+    font-size: 14px;
+    color: gray;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li {
+    display: inline-block;
+    background: none; /* Ensure no background */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+    background: none !important; /* Force remove any gray background */
+    padding: 10px 15px;
+    border-radius: 5px; /* Optional for better hover effects */
+}
+
+nav ul li a:hover {
+    background: rgba(0, 0, 0, 0.1); /* Optional hover effect */
+}
+
+/* Hero Section */
+#hero {
+    height: 100vh;
+    background: url('backgroundmain.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+    margin-top: 80px;
+}
+
+#hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    z-index: 1;
+}
+
+/* Ensuring Text is Above Overlay */
+.hero-text {
+    position: relative;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.1); /* Slight transparency to make text pop */
+    padding: 20px 40px;
+    border-radius: 10px;
+}
+
+.hero-text {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 20px 40px;
+    border-radius: 10px;
+}
+
+.hero-text h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.hero-text p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Sections */
+.section {
+    text-align: center;
+    background: #fff;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+	padding: 60px 0; /* Adds spacing between sections */
+    border-bottom: 2px solid #ddd; /* Light gray divider */
+}
+
+/* Typography */
+h2 {
+    color: #444;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: #e4e4e4;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Blockquote */
+blockquote {
+    font-style: italic;
+    background: #f9f9f9;
+    padding: 15px;
+    border-left: 5px solid #333;
+    margin: 20px auto;
+    width: 60%;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+  /* Services Part */
+
+.services-section h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #B71C1C; /* Light red */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+.services-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.services-section p {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.service-item {
+    text-align: center;
+}
+
+.service-item img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.service-item h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.service-item p {
+    color: #777;
+    font-size: 14px;
+}
+
+.schedule-btn {
+    display: block;
+    background-color: #a33;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+    margin: 30px auto 0; /* Auto centers horizontally */
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+.schedule-btn:hover {
+    background-color: #900;
+}
+
+/* Reviews Part */
+.reviews-section {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #ffffff; /* White background */
+}
+
+.reviews-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Updated review card to improve contrast on white background */
+.review-card {
+    background-color: #f5f5f5; /* Light gray background for contrast */
+    color: #1E1E28; /* Dark text for readability */
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.review-name {
+    font-weight: bold;
+    color: #B71C1C; /* Darker red for better contrast */
+    text-transform: uppercase;
+}
+
+.review-comment {
+    font-style: italic;
+    opacity: 0.8;
+    color: #333; /* Slightly darker text for better readability */
+}
+
+.review-quote {
+    font-size: 40px;
+    color: #B71C1C; /* Dark red */
+    margin-top: 10px;
+}
+
+.reviews-section h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #B71C1C; /* Light red */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+/* maintenance tips */
+
+.tips-section {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.tips-section h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #B71C1C; /* Red color */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.tips-section p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.tip-posts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.tip-card {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    max-width: 800px;
+    width: 100%;
+}
+
+.tip-card img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.tip-content {
+    padding: 20px;
+    text-align: left;
+}
+
+.tip-content h3 {
+    margin: 0;
+}
+
+.tip-content h3 a {
+    text-decoration: none;
+    color: #B71C1C;
+}
+
+.tip-content p {
+    color: #555;
+}
+
+/* About Us Section */
+.about-us {
+    background-color: #F5F5F5;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px;
+    margin: auto;
+    gap: 50px;
+}
+
+.about-content {
+    flex: 1;
+    text-align: left;
+}
+
+.about-content h2 {
+    font-size: 36px;
+    color: #B71C1C; /* Deep red */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.learn-more {
+    background-color: #B71C1C;
+    color: white;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.learn-more:hover {
+    background-color: #8E0D0D;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Blog Post Section Styles */
+#blog-post {
+    margin: 80px auto 40px auto; /* Added margin-top to push it below the header */
+    max-width: 800px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Blog Post Header */
+.blog-post-header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.blog-post-header .post-date {
+    font-size: 1rem;
+    color: #888;
+    margin-bottom: 20px;
+}
+
+.blog-post-header .post-date span {
+    font-weight: bold;
+}
+
+/* Blog Post Image */
+.blog-post-image img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Blog Post Content */
+.blog-post-content {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #444;
+}
+
+.blog-post-content p {
+    margin-bottom: 20px;
+}
+
+.blog-post-content p:last-child {
+    margin-bottom: 0;
+}
+
+/* Optional: Add a responsive design for mobile */
+@media (max-width: 768px) {
+    #blog-post {
+        padding: 15px;
+    }
+
+    .blog-post-header h1 {
+        font-size: 2rem;
+    }
+
+    .blog-post-header .post-date {
+        font-size: 0.9rem;
+    }
+
+    .blog-post-content {
+        font-size: 1rem;
+    }
+}
+
+.reviews-section.full-page {
+    padding-top: 120px; /* Adjust based on your header height */
+}
+
+/* Submit Review Section */
+.submit-review {
+    background-color: white;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.submit-review h2 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #B71C1C;
+}
+
+.submit-review label {
+    font-size: 16px;
+    margin-bottom: 8px;
+    font-weight: bold;
+    display: block;
+}
+
+.submit-review input,
+.submit-review textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.submit-review textarea {
+    resize: vertical;
+}
+
+.submit-review button {
+    background-color: #d90429;
+    color: white;
+    padding: 12px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-review button:hover {
+    background-color: #b80323;
+}
+
+@media (max-width: 768px) {
+    .submit-review {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .submit-review h2 {
+        font-size: 24px;
+    }
+}

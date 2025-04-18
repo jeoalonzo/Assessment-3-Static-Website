@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #222;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.brand-text {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.auto-care {
+    font-size: 18px;
+    color: #ffcc00;
+}
+
+.pros {
+    font-size: 14px;
+    color: #ddd;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a.active {
+    color: #ffcc00;
+}
+
+.blog-container {
+    max-width: 800px;
+    margin: 50px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.blog-post h1 {
+    font-size: 28px;
+    color: #222;
+}
+
+.date {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.blog-post img {
+    width: 100%;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+.blog-post h2 {
+    font-size: 22px;
+    margin-top: 20px;
+    color: #333;
+}
+
+.blog-post h3 {
+    font-size: 18px;
+    color: #444;
+    margin-top: 15px;
+}
+
+.blog-post p {
+    line-height: 1.6;
+    color: #555;
+}
+
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 50px;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Reviews | AutoCare Pros</title>
+    <link href="css/theme.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Auto Care Logo">
+            <div class="brand-text">
+                <span class="auto-care">AUTO CARE</span><br>
+                <span class="pros">PROS by Jerico</span>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="reviews-section full-page">
+        <h1>Customer Reviews</h1>
+        <p>See what our customers are saying about AutoCare Pros!</p>
+        <div class="reviews-container">
+            <div class="review-card">
+                <p class="review-name">ANONYMOUS</p>
+                <p class="review-comment">Best customer service in Australia!</p>
+                <p class="review-quote">“”</p>
+            </div>
+            <div class="review-card">
+                <p class="review-name">JERICO</p>
+                <p class="review-comment">Car got in broken, car got out fresh!</p>
+                <p class="review-quote">“”</p>
+            </div>
+            <div class="review-card">
+                <p class="review-name">ANONYMOUS</p>
+                <p class="review-comment">Nothing compares to how AutoCare Pros work. The quality is amazing!</p>
+                <p class="review-quote">“”</p>
+            </div>
+        </div>
+    </section>
+		<section class="submit-review">
+    <h2>Submit a Review</h2>
+    <form onsubmit="handleReviewSubmit(event)">
+        <label for="reviewer-name">Your Name:</label>
+        <input type="text" id="reviewer-name" name="reviewer-name" placeholder="Optional">
+
+        <label for="review-comment">Your Review:</label>
+        <textarea id="review-comment" name="review-comment" rows="4" required></textarea>
+
+        <button type="submit">Submit Review</button>
+    </form>
+</section>
+
+		<script>
+			function handleReviewSubmit(event) {
+				event.preventDefault();
+				alert('Thank you for your review!');
+				event.target.reset();
+			}
+		</script>
+    <footer>
+        <p>&copy; 2025 AutoCare Pros. All rights reserved.</p>
+    </footer>
+</body>
+</html>

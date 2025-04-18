@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule Service - AutoCare Pros</title>
+    <link rel="stylesheet" href="schedule-styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Auto Care Logo">
+            <div class="brand-text">
+                <span class="auto-care">AUTO CARE</span><br>
+                <span class="pros">PROS by Jerico</span>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+            </ul>
+        </nav>
+    </header>
+	    <section class="schedule-service">
+        <h2>Schedule a Service</h2>
+        <form onsubmit="handleSubmit(event)">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="service">Select Service:</label>
+            <select id="service" name="service" required>
+                <option value="oil-change">Oil Change</option>
+                <option value="brake-repair">Brake Repair</option>
+                <option value="tire-services">Tire Services</option>
+                <option value="diagnostics">Diagnostics</option>
+                <option value="battery-service">Battery Service</option>
+                <option value="towing">Towing</option>
+            </select>
+
+            <label for="date">Preferred Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="message">Special Requests:</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+
+            <button type="submit">Submit Request</button>
+        </form>
+    </section>
+    <section class="our-services">
+    <h2>Our Services</h2>
+    <p class="intro-text">At AutoCare Pros, we offer a full suite of professional services to keep your vehicle running at its best. Our certified technicians are committed to quality, efficiency, and your safety. Below is a breakdown of the services you can book with us:</p>
+    
+    <div class="services-list">
+        <div class="service-card">
+            <h3>Oil Change</h3>
+            <p>Our comprehensive oil change service includes draining old oil, replacing it with premium-grade synthetic or conventional oil, and installing a new oil filter. Regular oil changes help prevent engine wear, improve fuel efficiency, and extend the life of your vehicle. Recommended every 3,000–5,000 miles.</p>
+        </div>
+
+        <div class="service-card">
+            <h3>Brake Repair</h3>
+            <p>If you hear squealing, grinding, or notice reduced stopping power, it’s time for a brake inspection. We offer pad replacements, rotor resurfacing, and brake fluid flushes. Our brake service ensures you stop safely and avoid costly repairs down the road.</p>
+        </div>
+
+        <div class="service-card">
+            <h3>Tire Services</h3>
+            <p>From puncture repairs to full replacements, we handle all your tire needs. We provide tire rotations, balancing, and alignments to promote even tire wear, better fuel economy, and a smoother ride. Choose from top tire brands to fit your vehicle and budget.</p>
+        </div>
+
+        <div class="service-card">
+            <h3>Diagnostics</h3>
+            <p>Is your check engine light on? We use industry-grade OBD-II scanners and software to identify and diagnose underlying issues in your engine, transmission, sensors, or electrical systems. We provide a full report and recommend solutions based on our findings.</p>
+        </div>
+
+        <div class="service-card">
+            <h3>Battery Service</h3>
+            <p>A weak or dead battery can leave you stranded. We perform voltage tests, check for corrosion, clean terminals, and offer battery replacements with warranty-backed options. Our service ensures your vehicle starts reliably, even in cold weather.</p>
+        </div>
+
+        <div class="service-card">
+            <h3>Towing</h3>
+            <p>Breakdowns can happen at the worst times. Our 24/7 towing service ensures fast response times and secure transport of your vehicle to our facility. Whether it’s a flat tire, dead battery, or an accident, we’re here to help get you back on the road safely.</p>
+        </div>
+    </div>
+</section>
+
+
+    
+    <footer>
+        <p>&copy; 2025 AutoCare Pros. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault();
+            alert('Your service request has been submitted! We will contact you shortly.');
+            event.target.reset();
+        }
+    </script>
+</body>
+</html>
